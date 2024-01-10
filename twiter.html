@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter Clone - Final</title>
+    <link rel="stylesheet" href="twiter.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+  </head>
+  <body>
+    <!-- sidebar starts -->
+    <div class="sidebar">
+      <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 512 512" style="margin-left: 20px; margin-top:2px"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+      <div class="sidebarOption">
+        <span class="material-icons"> home </span>
+        <h2>Home</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> search </span>
+        <h2>Explore</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> notifications_none </span>
+        <h2>Notifications</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> mail_outline </span>
+        <h2>Messages</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <img src="C:\Users\mural\OneDrive\Desktop\code\html\twiter\image\Grok-AI-Black-Logo-PNG.png" height="16" width="20" style="margin: 20px;">
+
+        <h2>Grok</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> list_alt </span>
+        <h2>Lists</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> bookmark_border </span>
+        <h2>Bookmarks</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="20" style="margin:20px" viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M211.2 96a64 64 0 1 0 -128 0 64 64 0 1 0 128 0zM32 256c0 17.7 14.3 32 32 32h85.6c10.1-39.4 38.6-71.5 75.8-86.6c-9.7-6-21.2-9.4-33.4-9.4H96c-35.3 0-64 28.7-64 64zm461.6 32H576c17.7 0 32-14.3 32-32c0-35.3-28.7-64-64-64H448c-11.7 0-22.7 3.1-32.1 8.6c38.1 14.8 67.4 47.3 77.7 87.4zM391.2 226.4c-6.9-1.6-14.2-2.4-21.6-2.4h-96c-8.5 0-16.7 1.1-24.5 3.1c-30.8 8.1-55.6 31.1-66.1 60.9c-3.5 10-5.5 20.8-5.5 32c0 17.7 14.3 32 32 32h224c17.7 0 32-14.3 32-32c0-11.2-1.9-22-5.5-32c-10.8-30.7-36.8-54.2-68.9-61.6zM563.2 96a64 64 0 1 0 -128 0 64 64 0 1 0 128 0zM321.6 192a80 80 0 1 0 0-160 80 80 0 1 0 0 160zM32 416c-17.7 0-32 14.3-32 32s14.3 32 32 32H608c17.7 0 32-14.3 32-32s-14.3-32-32-32H32z"/></svg>
+        <h2>Communities</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="20" style="margin:20px" viewBox="0 0 512 512" style="margin-left: 20px; margin-top:2px"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+        <h2>Premium</h2>
+      </div>
+
+
+      <div class="sidebarOption">
+        <span class="material-icons"> perm_identity </span>
+        <h2>Profile</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> more_horiz </span>
+        <h2>More</h2>
+      </div>
+      <button class="sidebar__tweet">Post</button>
+   
+      
+      <div class="box">
+        <img
+        src="https://pbs.twimg.com/profile_images/1744625065491300352/4iVnBJjx_400x400.jpg"
+        alt="" width="50" height="50" style="margin-left:-170px;margin-top:-15px;border-radius: 50%;"
+      /> 
+      <br>
+      <h4 style="color: black;margin-top: -43px;margin-left: 27px;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Murali Krishnan </h4>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" style="padding-right: 0px;" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"/></svg> 
+      <h6 style="color: black; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; margin-top: -16px;">@Muralikris8085</h6>
+      
+    </div>
+    </div>
+ 
+    <!-- sidebar ends -->
+
+    <!-- feed starts -->
+    <div class="feed">
+      <div class="feed__header">
+        <label  style="margin-left: 120px;cursor: pointer;font-family: sans-serif;" for="clickableArea" onclick="showBlueBar()">For You</label>
+     
+         <span style="margin-left: 185px;cursor: pointer;font-family: sans-serif;">Following</span><span><svg style="margin-left: 120px;" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="30px" height="20px"><path d="M 9.6660156 2 L 9.1757812 4.5234375 C 8.3516137 4.8342536 7.5947862 5.2699307 6.9316406 5.8144531 L 4.5078125 4.9785156 L 2.171875 9.0214844 L 4.1132812 10.708984 C 4.0386488 11.16721 4 11.591845 4 12 C 4 12.408768 4.0398071 12.832626 4.1132812 13.291016 L 4.1132812 13.292969 L 2.171875 14.980469 L 4.5078125 19.021484 L 6.9296875 18.1875 C 7.5928951 18.732319 8.3514346 19.165567 9.1757812 19.476562 L 9.6660156 22 L 14.333984 22 L 14.824219 19.476562 C 15.648925 19.165543 16.404903 18.73057 17.068359 18.185547 L 19.492188 19.021484 L 21.826172 14.980469 L 19.886719 13.291016 C 19.961351 12.83279 20 12.408155 20 12 C 20 11.592457 19.96113 11.168374 19.886719 10.710938 L 19.886719 10.708984 L 21.828125 9.0195312 L 19.492188 4.9785156 L 17.070312 5.8125 C 16.407106 5.2676813 15.648565 4.8344327 14.824219 4.5234375 L 14.333984 2 L 9.6660156 2 z M 11.314453 4 L 12.685547 4 L 13.074219 6 L 14.117188 6.3945312 C 14.745852 6.63147 15.310672 6.9567546 15.800781 7.359375 L 16.664062 8.0664062 L 18.585938 7.40625 L 19.271484 8.5917969 L 17.736328 9.9277344 L 17.912109 11.027344 L 17.912109 11.029297 C 17.973258 11.404235 18 11.718768 18 12 C 18 12.281232 17.973259 12.595718 17.912109 12.970703 L 17.734375 14.070312 L 19.269531 15.40625 L 18.583984 16.59375 L 16.664062 15.931641 L 15.798828 16.640625 C 15.308719 17.043245 14.745852 17.36853 14.117188 17.605469 L 14.115234 17.605469 L 13.072266 18 L 12.683594 20 L 11.314453 20 L 10.925781 18 L 9.8828125 17.605469 C 9.2541467 17.36853 8.6893282 17.043245 8.1992188 16.640625 L 7.3359375 15.933594 L 5.4140625 16.59375 L 4.7285156 15.408203 L 6.265625 14.070312 L 6.0878906 12.974609 L 6.0878906 12.972656 C 6.0276183 12.596088 6 12.280673 6 12 C 6 11.718768 6.026742 11.404282 6.0878906 11.029297 L 6.265625 9.9296875 L 4.7285156 8.59375 L 5.4140625 7.40625 L 7.3359375 8.0683594 L 8.1992188 7.359375 C 8.6893282 6.9567546 9.2541467 6.6314701 9.8828125 6.3945312 L 10.925781 6 L 11.314453 4 z M 12 8 C 9.8034768 8 8 9.8034768 8 12 C 8 14.196523 9.8034768 16 12 16 C 14.196523 16 16 14.196523 16 12 C 16 9.8034768 14.196523 8 12 8 z M 12 10 C 13.111477 10 14 10.888523 14 12 C 14 13.111477 13.111477 14 12 14 C 10.888523 14 10 13.111477 10 12 C 10 10.888523 10.888523 10 12 10 z"/></svg></span></h2>
+         <div id="blueBar"></div>
+        </div>
+
+      
+      
+      <!-- tweetbox starts -->
+      <div class="tweetBox">
+        <form>
+          <div class="tweetbox__input">
+            <img
+              src="https://pbs.twimg.com/profile_images/1744625065491300352/4iVnBJjx_400x400.jpg"
+              alt=""
+            />
+            <input type="text" placeholder="What's happening?" />
+          </div>
+          <button class="tweetBox__tweetButton">Post</button>
+        </form>
+        <div class="emojis">
+        <svg style="cursor: pointer; margin-left:80px;margin-right:10px;" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 64 64" width="22px" height="22px"><path d="M 15 13 C 11.686 13 9 15.686 9 19 L 9 45 C 9 48.314 11.686 51 15 51 L 49 51 C 52.314 51 55 48.314 55 45 L 55 19 C 55 15.686 52.314 13 49 13 L 15 13 z M 15 17 L 49 17 C 50.105 17 51 17.895 51 19 L 51 41.433594 L 41.681641 33.054688 C 40.158641 31.684688 37.844219 31.686547 36.324219 33.060547 L 28.402344 40.21875 L 24.609375 36.974609 C 23.108375 35.690609 20.894437 35.695375 19.398438 36.984375 L 13 42.496094 L 13 19 C 13 17.895 13.895 17 15 17 z M 23 23 C 20.791 23 19 24.791 19 27 C 19 29.209 20.791 31 23 31 C 25.209 31 27 29.209 27 27 C 27 24.791 25.209 23 23 23 z"/></svg>
+        <img src="image/gif-file.png" height="22" width="22" style="cursor: pointer;margin-right:10px;">
+        <img src="image/polling.png" height="22" width="22" style="cursor: pointer;margin-right:10px;">
+        <img src="image/happy.png" height="20" width="20" style="cursor: pointer;margin-right:10px;">
+        <img src="image/shedule.png" height="20" width="20" style="cursor: pointer;margin-right:10px;">
+        <img src="image/location.png" height="20" width="20" style="cursor: pointer;"></div>
+        
+      </div>
+      <div>
+      <h3 style="text-align: center;font-weight: lighter;cursor: pointer;margin-top: 10px;"><a href="#" style="text-decoration: none;color: var(--twitter-color);">Show 630 Post</a></h3>
+      </div>
+      <div class="tweetBox"></div>
+      <!-- tweetbox ends -->
+      
+      <!-- post starts -->
+      <div class="post">
+        <div class="post__avatar">
+          <img
+            src="https://pbs.twimg.com/profile_images/1649088268355653634/yRnzTnJg_400x400.jpg"
+            alt=""
+          />
+        </div>
+
+        <div class="post__body">
+          <div class="post__header">
+            <div class="post__headerText">
+              <h3>
+                Mammootty
+                <span class="post__headerSpecial"
+                  ><span class="material-icons post__badge"> verified </span>@mammukka</span
+                >
+              </h3>
+            </div>
+            <div class="post__headerDescription" style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+              <p>Presenting the<span style="color: var(--twitter-color);">#Yatra2Teaser</span>. A story of promises, commitment and triumph!</p>
+              <br>
+              <p style="color: var(--twitter-color);">🔗 https://youtu.be/lKRDrDTEGWc<br><br>
+
+                #Yatra2 #Yatra2OnFeb8th 
+                @JiivaOfficial
+                 
+                @ShivaMeka
+                 
+                @MahiVraghav</p>
+            </div>
+          </div>
+          <img
+            src="https://pbs.twimg.com/media/GDDmHETaUAAudJM?format=jpg&name=small"
+            alt=""
+          />
+          <div class="post__footer" style="cursor: pointer;">
+            <i style='font-size:24px' class='far'>&#xf075;<span class="fo" style="font-size: 15px;">&nbsp;51</span></i>
+            <span class="material-icons"> repeat </span>
+            <span class="material-icons"> favorite_border </span>
+            <i class="material-icons">&#xe801;</i>
+            <i class="fa fa-bookmark-o" style="font-size:24px"></i>
+            <span class="material-icons"> publish </span>
+          </div>
+        </div>
+      </div>
+      <!-- post ends -->
+
+      <!-- post starts -->
+      <div class="post">
+        <div class="post__avatar">
+          <img
+            src="https://pbs.twimg.com/profile_images/1577059981215485952/8z9zeDIT_400x400.jpg"
+            alt=""
+          />
+        </div>
+
+        <div class="post__body">
+          <div class="post__header" style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+            <div class="post__headerText">
+              <h3>
+                🌩️ NVIDIA GeForce NOW
+                <span class="post__headerSpecial"
+                  ><span class="material-icons post__badge"> verified </span>@NIVIDIAGFN</span
+                >
+              </h3>
+            </div>
+            <div class="post__headerDescription">
+              <p>The world cloud is a stage this <span style="color: var(--twitter-color);">#GFNThursday</span>. ✨</p>
+<br>
+               <p> <span style="color: var(--twitter-color);">  @reachthefinals</span></p>
+               <br>
+                <p>kicks off the new year and is now streaming on <span style="color: var(--twitter-color);">#GeForceNOW!</span> </p>
+            </div>
+          </div>
+          <img
+            src="https://pbs.twimg.com/media/GDA3eFqXAAA9YmK?format=jpg&name=large"
+            alt=""
+          />
+          <div class="post__footer" style="cursor: pointer;">
+            <i style='font-size:24px' class='far'>&#xf075;<span class="fo" style="font-size: 15px;">&nbsp;51</span></i>
+            <span class="material-icons" > repeat</span>
+            <span class="material-icons"> favorite_border</span>
+            <i class="material-icons">&#xe801;</i>
+            <i class="fa fa-bookmark-o" style="font-size:24px"></i>
+            <span class="material-icons"> publish </span>
+
+          </div>
+        </div>
+      </div>
+      <!-- post ends -->
+    </div>
+    <!-- feed ends -->
+
+    <!-- widgets starts -->
+    <div class="widgets">
+      <div class="widgets__input">
+        <span class="material-icons widgets__searchIcon"> search </span>
+        <input type="text" placeholder="Search"/>
+      </div>
+
+      <div class="widgets__widgetContainer">
+        <h2 style="font-size: x-large;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Subscribe to Premium</h2>
+        <br>
+        <h3 style="font-weight: lighter;font-size:medium-;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Subscribe to unlock new features and if eligible, receive a share of ads revenue.</h3>
+      
+        <button class="tweetBox__tweetButton" style="width: 100px;">Subscribe</button>
+      </div>
+
+      <div class="widgets__widgetContainer">
+        <h2>What's happening?</h2>
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">
+            Sunsets don&#39;t get much better than this one over
+            <a href="https://twitter.com/GrandTetonNPS?ref_src=twsrc%5Etfw">@GrandTetonNPS</a>.
+            <a href="https://twitter.com/hashtag/nature?src=hash&amp;ref_src=twsrc%5Etfw"
+              >#nature</a
+            >
+            <a href="https://twitter.com/hashtag/sunset?src=hash&amp;ref_src=twsrc%5Etfw"
+              >#sunset</a
+            >
+            <a href="http://t.co/YuKy2rcjyU">pic.twitter.com/YuKy2rcjyU</a>
+          </p>
+          &mdash; US Department of the Interior (@Interior)
+          <a href="https://twitter.com/Interior/status/463440424141459456?ref_src=twsrc%5Etfw"
+            >May 5, 2014</a
+          >
+        </blockquote>
+
+      </div>
+
+      <div class="widgets__widgetContainer">
+        <h2>Who to Follow</h2>
+        <blockquote class="twitter-tweet">
+       <br>
+       <br>
+       <img src="https://pbs.twimg.com/profile_images/1613315681025499136/nxpPAt-O_400x400.jpg" style="border-radius: 50%; height: 40px; width: 40px;cursor: pointer;"><span><h3 style="cursor: pointer;margin-left: 55px;margin-top: -45px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">AnyTime Fitness</h3>  <span><button class="tweetBox__tweetButton" style="background-color:rgb(29, 29, 29);cursor: pointer;color: white;margin-left: 250px;margin-top: -130px;">Follow</button></span><p style="margin-left: 55px;margin-top:-25px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;color: grey;">@AnytimeFitness</p></span>
+       <br>
+       <br>
+       <img src="https://pbs.twimg.com/profile_images/1668330273212071954/ZwfQr7PH_400x400.jpg" style="border-radius: 50%; height: 40px; width: 40px;cursor: pointer;"><span><h3 style="cursor: pointer;margin-left: 55px;margin-top: -45px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Ubisoft<img src="https://cdn-icons-png.flaticon.com/128/5253/5253968.png" height="15" width="15"></h3>  <span><button class="tweetBox__tweetButton" style="cursor: pointer;background-color:rgb(29, 29, 29);color: white;margin-left: 250px;margin-top: -130px;">Follow</button></span><p style="margin-left: 55px;margin-top:-25px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;color: grey;">@Ubisoft</p></span>
+       <br>  
+       <span style="color: var(--twitter-color);cursor: pointer;">Show More</span>
+        </blockquote>
+        
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div>
+    <!-- widgets ends -->
+    <script>
+      function showBlueBar() {
+        // Get the blue bar element
+        var blueBar = document.getElementById("blueBar");
+  
+        // Toggle the visibility of the blue bar
+        if (blueBar.style.display === "none") {
+          blueBar.style.display = "block";
+        } else {
+          blueBar.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
